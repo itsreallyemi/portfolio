@@ -44,6 +44,8 @@
   .proj--flip .proj__copy { justify-self: end; }
   .proj__media { position: relative; perspective: 1400px; }
   .proj__frame { aspect-ratio: 4 / 3; transform-style: preserve-3d; }
+  /* Website screenshots keep their full 16:10 view, nothing trimmed. */
+  .proj__frame--site { aspect-ratio: 16 / 10; }
   .proj__frame .shot { width: 100%; height: 100%; }
   .proj__copy { display: grid; gap: var(--sc-5); width: 100%; max-width: 37rem; container-type: inline-size; }
   .proj__copy .lbl__kind { font-size: var(--sc-t-sm); }
@@ -255,7 +257,7 @@
   </section>
 
   <section class="proj proj--flip" id="jishiwa" data-blob-at="4" data-blob-side="right" data-nav-for="work" data-sc-act="flow" aria-labelledby="js-t">
-    <div class="proj__media"><div class="proj__frame" data-sc-tilt="8"><figure class="shot" data-sc-parallax="-0.9"><img src="img/jishiwa-hero.jpg" alt="Jishiwa home page: a glowing globe behind the headline Reliable hosting, email and affordable domains"></figure></div></div>
+    <div class="proj__media"><div class="proj__frame proj__frame--site" data-sc-tilt="8"><figure class="shot" data-sc-parallax="-0.9"><img src="img/jishiwa-hero.jpg" alt="Jishiwa home page: a glowing globe behind the headline Reliable hosting, email and affordable domains"></figure></div></div>
     <div class="proj__copy" data-sc-in data-sc-stagger="60">
       <p class="lbl__kind">Product design · Brand · Front end</p>
       <h2 class="proj__title" id="js-t">Jishiwa</h2>
@@ -270,7 +272,7 @@
   </section>
 
   <section class="proj" id="faithwellness" data-blob-at="5" data-blob-side="left" data-nav-for="work" data-sc-act="flow" aria-labelledby="fw-t">
-    <div class="proj__media"><div class="proj__frame" data-sc-tilt="8"><figure class="shot" data-sc-parallax="-0.9"><img src="img/fw-hero.jpg" alt="FaithWellness home page: Find a counselor who understands your faith"></figure></div></div>
+    <div class="proj__media"><div class="proj__frame proj__frame--site" data-sc-tilt="8"><figure class="shot" data-sc-parallax="-0.9"><img src="img/fw-hero.jpg" alt="FaithWellness home page: Find a counselor who understands your faith"></figure></div></div>
     <div class="proj__copy" data-sc-in data-sc-stagger="60">
       <p class="lbl__kind">Product design · Brand · Front end</p>
       <h2 class="proj__title" id="fw-t">FaithWellness</h2>
