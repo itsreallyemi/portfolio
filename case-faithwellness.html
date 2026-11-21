@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FaithWellness · Emi Kobayashi</title>
+<meta name="description" content="How Emi Kobayashi shaped, designed and built FaithWellness, a prototype that connects people with Christian counselors accredited by their churches.">
+<link rel="icon" href="2025-12-EK-Logo-scaled.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Mulish:wght@400;600;700;800;900&display=swap">
+<link rel="stylesheet" href="scrollcraft.css?v=3">
+<link rel="stylesheet" href="site.css?v=17">
+<link rel="stylesheet" href="case.css?v=10">
+<script>
+  /* ?motion=reduce forces the reduced-motion path for testing. */
+  (function () {
+    if (/[?&]motion=reduce\b/.test(location.search)) {
+      var mm = window.matchMedia.bind(window);
+      window.matchMedia = function (q) { return /prefers-reduced-motion:\s*reduce/.test(q) ? { matches: true, media: q, addEventListener: function () {}, addListener: function () {} } : mm(q); };
+    }
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('rm');
+  })();
+</script>
+</head>
+<body>
+
+<svg class="blob" viewBox="0 0 1400 770" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><g class="blob__back"><path/></g><g class="blob__front"><path/></g></svg>
+<div class="sc-grain" aria-hidden="true"></div>
+
+<header class="bar" id="bar">
+  <a class="bar__mark" href="index.html" aria-label="Emi Kobayashi, all work">
+    <img src="2025-12-EK-Logo-scaled.png" width="64" height="40" alt="">
+    <span class="bar__name">Emi Kobayashi</span>
+  </a>
+  <p class="bar__now cs-now" aria-live="polite"><span id="folio-num">FaithWellness</span> · <b id="folio-title">Case study</b></p>
+  <nav class="cs-nav" aria-label="Case study">
+    <a class="cs-nav__all" href="index.html#work">All work</a>
+    <a class="btn btn--small cs-nav__cta" href="index.html#contact">Email Emi</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="c-hero" data-blob-at="2" data-blob-side="left">
+    <div class="c-hero__media"><div data-sc-tilt="4"><figure class="shot"><img src="img/fw-hero.jpg" width="1800" height="1125" alt="FaithWellness home page: Find a counselor who understands your faith, with a search bar and counselor cards" fetchpriority="high"></figure></div></div>
+    <div class="c-hero__copy">
+      <p class="lbl__kind">Case study · Product design · Brand · Front end</p>
+      <h1>FaithWellness</h1>
+      <p class="c-deck">A prototype that connects people with pastoral and Christian counselors, each one accredited by a church they can trust.</p>
+      <dl class="c-meta">
+        <div><dt>Role</dt><dd>Product strategy, UX and UI, brand, front end</dd></div>
+        <div><dt>Client</dt><dd>FaithWellness</dd></div>
+        <div><dt>Stage</dt><dd>Working prototype, responsive web</dd></div>
+        <div><dt>Live site</dt><dd><a class="link" href="https://www.faithwellnesscounseling.com/" target="_blank" rel="noopener">Visit the live site ↗</a></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="c-ch c-ch--text" id="outcome" data-title="Outcome" data-blob-at="5" data-blob-side="corner">
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 1</p>
+      <h2>A working prototype, ready to test</h2>
+      <div class="c-cols">
+        <p class="lead">I shaped FaithWellness from an idea into a prototype people can actually use: real sign-in and a real counselor directory, with bookings, messages and memberships simulated for testing.</p>
+        <ul class="c-points">
+          <li>One marketplace serving three audiences: people seeking care, counselors and churches</li>
+          <li>A brand that feels warm and trustworthy, not clinical</li>
+          <li>Designed and built end to end, responsive from desktop to phone</li>
+          <li>Safety built in: crisis help on every page</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-ch c-ch--flip" id="problem" data-title="The need" data-blob-at="0" data-blob-side="right" data-sc-act="flow">
+    <figure class="c-media"><div class="shot" data-sc-parallax="-0.8"><img src="img/fw-counselors.jpg" width="1800" height="1125" alt="For counselors page: Your counseling is ministry. Bring it to the people who need it." loading="lazy"></div></figure>
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 2</p>
+      <h2>So many people carry something alone</h2>
+      <p class="lead">A marriage under strain. Grief that never had room. Hurt from a church that should have been safe. Many people want help that honours their faith, but don't know where to find it.</p>
+      <p>Some can't ask their own pastor, some face long waiting lists, and some can't afford it. FaithWellness had to make faith-rooted care easy to find, and easy to trust.</p>
+    </div>
+  </section>
+
+  <section class="c-ch" id="directory" data-title="Finding care" data-blob-at="1" data-blob-side="left" data-sc-act="flow">
+    <figure class="c-media"><div class="shot" data-sc-parallax="-0.8"><img src="img/fw-directory.jpg" width="1620" height="1800" alt="Counselor directory with filters on the left and counselor cards showing credentials, church and next opening" loading="lazy"></div></figure>
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 3</p>
+      <h2>A directory built on trust</h2>
+      <p class="lead">Every card answers the questions people are afraid to ask: who is this, which church stands behind them, and when can I talk to them?</p>
+      <ul class="c-points">
+        <li>Credentials, church and the next opening, at a glance</li>
+        <li>Filters for focus, denomination, church, cost and session length</li>
+        <li>Pastoral services too: weddings, funerals, hospital visits, mediation</li>
+        <li>Fees shared privately when you connect, so cost never shames anyone</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="c-ch c-ch--flip" id="matcher" data-title="Five questions" data-blob-at="2" data-blob-side="right" data-sc-act="flow">
+    <figure class="c-media c-media--pair">
+      <div class="shot" data-sc-parallax="-0.6"><img src="img/fw-quiz.jpg" width="1800" height="1125" alt="Question 1 of 5: Who is the counseling for?" loading="lazy"></div>
+      <div class="shot" data-sc-parallax="-1.4"><img src="img/fw-phone-quiz.jpg" width="750" height="1624" alt="The five-question matcher on a phone" loading="lazy"></div>
+    </figure>
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 4</p>
+      <h2>Not sure where to start?</h2>
+      <p class="lead">Browsing a directory is hard when you're hurting. Five short questions do the sorting instead, starting with the simplest: who is the counseling for?</p>
+      <p>Me, us as a couple, our family or my child. Answers stay private, and you can change them at any time.</p>
+    </div>
+  </section>
+
+  <section class="c-ch" id="profile" data-title="Counselor profiles" data-blob-at="3" data-blob-side="left" data-sc-act="flow">
+    <figure class="c-media c-media--pair">
+      <div class="shot" data-sc-parallax="-0.6"><img src="img/fw-profile.jpg" width="1800" height="1125" alt="A counselor profile with credentials, years in ministry, languages and a booking panel" loading="lazy"></div>
+      <div class="shot" data-sc-parallax="-1.4"><img src="img/fw-phone-profile.jpg" width="750" height="1624" alt="The same profile on a phone with a sticky Book a session button" loading="lazy"></div>
+    </figure>
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 5</p>
+      <h2>Profiles that feel personal</h2>
+      <p class="lead">A profile reads like meeting someone, not scanning a listing: how they bring faith into care, and the verse they return to most.</p>
+      <ul class="c-points">
+        <li>Years in ministry, languages, tradition and how sessions happen</li>
+        <li>Book a 30 or 60 minute video session in a few taps</li>
+        <li>On phones, the booking button stays within reach</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="c-ch c-ch--flip" id="accreditation" data-title="Accreditation" data-blob-at="4" data-blob-side="right" data-sc-act="flow">
+    <figure class="c-media"><div class="shot" data-sc-parallax="-0.8"><img src="img/fw-accreditation.jpg" width="1800" height="1125" alt="Accreditation page: Accredited by the churches who know them, with three steps" loading="lazy"></div></figure>
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 6</p>
+      <h2>Accredited by the churches who know them</h2>
+      <p class="lead">The key product decision: FaithWellness doesn't accredit anyone. Churches and denominations do, and every badge links to a standard you can check.</p>
+      <ol class="c-steps">
+        <li><span>A church or denomination sets the standard for training, supervision and safeguarding.</span></li>
+        <li><span>The counselor meets it, and the church accredits them.</span></li>
+        <li><span>FaithWellness publishes the requirements and confirms the accreditation before a profile goes live.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="c-ch" id="churches" data-title="For churches" data-blob-at="5" data-blob-side="left" data-sc-act="flow">
+    <figure class="c-media"><div class="shot" data-sc-parallax="-0.8"><img src="img/fw-churches.jpg" width="1800" height="1125" alt="For churches page: Care for your people beyond Sunday morning" loading="lazy"></div></figure>
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 7</p>
+      <h2>Three audiences, one network</h2>
+      <p class="lead">A marketplace only works if every side wants to be there, so each audience got its own front door.</p>
+      <ul class="c-points">
+        <li><b>Churches</b> register their accreditation program and give members free sessions</li>
+        <li><b>Counselors</b> bring their ministry beyond the church walls, with scheduling handled</li>
+        <li><b>People seeking care</b> find someone their own church can vouch for</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="c-ch c-ch--flip" id="phone" data-title="Care and safety" data-blob-at="0" data-blob-side="right" data-sc-act="flow">
+    <figure class="c-media"><div class="shot" data-sc-parallax="-0.8"><img src="img/fw-phone-home.jpg" width="750" height="1624" alt="FaithWellness home page on a phone" loading="lazy"></div></figure>
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 8</p>
+      <h2>Gentle by design, safe by default</h2>
+      <p class="lead">People arrive here on hard days, so the product never asks them to carry more than they have to.</p>
+      <ul class="c-points">
+        <li>Crisis help on every page: call or text 988, or call 911</li>
+        <li>Fees discussed privately, never on a public card</li>
+        <li>Message a counselor first, before committing to a session</li>
+        <li>Warm colours, a friendly serif and plain words throughout</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="c-close" data-blob-at="1" data-blob-side="corner">
+    <div class="c-next">
+      <a class="c-next__link" href="case-nfl.html"><span>Next case study</span><b>NFL Fantasy</b></a>
+      <div class="c-close__ask">
+        <a class="btn" href="index.html#contact">Email Emi</a>
+        <p>Want to talk about this work or a role on your team?</p>
+      </div>
+    </div>
+    <div class="c-foot"><span>Emi Kobayashi · Product designer</span><a href="index.html#work">All work</a></div>
+  </footer>
+
+</main>
+
+<script src="scrollcraft.js"></script>
+<script src="blob.js?v=17"></script>
+<script src="cursor.js?v=4"></script>
+<script src="case.js?v=4"></script>
+</body>
+</html>

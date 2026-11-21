@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jishiwa · Emi Kobayashi</title>
+<meta name="description" content="How Emi Kobayashi shaped, designed and built Jishiwa's hosting storefront and the scroll-told launch page for Jishiwa Deploy.">
+<link rel="icon" href="2025-12-EK-Logo-scaled.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Mulish:wght@400;600;700;800;900&display=swap">
+<link rel="stylesheet" href="scrollcraft.css?v=3">
+<link rel="stylesheet" href="site.css?v=17">
+<link rel="stylesheet" href="case.css?v=10">
+<script>
+  /* ?motion=reduce forces the reduced-motion path for testing. */
+  (function () {
+    if (/[?&]motion=reduce\b/.test(location.search)) {
+      var mm = window.matchMedia.bind(window);
+      window.matchMedia = function (q) { return /prefers-reduced-motion:\s*reduce/.test(q) ? { matches: true, media: q, addEventListener: function () {}, addListener: function () {} } : mm(q); };
+    }
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('rm');
+  })();
+</script>
+</head>
+<body>
+
+<svg class="blob" viewBox="0 0 1400 770" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><g class="blob__back"><path/></g><g class="blob__front"><path/></g></svg>
+<div class="sc-grain" aria-hidden="true"></div>
+
+<header class="bar" id="bar">
+  <a class="bar__mark" href="index.html" aria-label="Emi Kobayashi, all work">
+    <img src="2025-12-EK-Logo-scaled.png" width="64" height="40" alt="">
+    <span class="bar__name">Emi Kobayashi</span>
+  </a>
+  <p class="bar__now cs-now" aria-live="polite"><span id="folio-num">Jishiwa</span> · <b id="folio-title">Case study</b></p>
+  <nav class="cs-nav" aria-label="Case study">
+    <a class="cs-nav__all" href="index.html#work">All work</a>
+    <a class="btn btn--small cs-nav__cta" href="index.html#contact">Email Emi</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="c-hero" data-blob-at="1" data-blob-side="left">
+    <div class="c-hero__media"><div data-sc-tilt="4"><figure class="shot"><img src="img/jishiwa-hero.jpg" width="1800" height="1125" alt="Jishiwa home page: a glowing globe behind the headline Reliable hosting, email and affordable domains" fetchpriority="high"></figure></div></div>
+    <div class="c-hero__copy">
+      <p class="lbl__kind">Case study · Product design · Brand · Front end</p>
+      <h1>Jishiwa</h1>
+      <p class="c-deck">A storefront for hosting, domains and email, plus a scroll-told launch page for Jishiwa Deploy, a new service that takes AI-built projects live.</p>
+      <dl class="c-meta">
+        <div><dt>Role</dt><dd>Product strategy, UX and UI, brand, front end</dd></div>
+        <div><dt>Client</dt><dd>Jishiwa, a web hosting provider</dd></div>
+        <div><dt>Platform</dt><dd>Responsive web, desktop to phone</dd></div>
+        <div><dt>Live site</dt><dd><a class="link" href="https://jishiwa.vercel.app/" target="_blank" rel="noopener">Visit the live site ↗</a></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="c-ch c-ch--text" id="outcome" data-title="Outcome" data-blob-at="4" data-blob-side="corner">
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 1</p>
+      <h2>From brief to two live pages</h2>
+      <div class="c-cols">
+        <p class="lead">I took Jishiwa from a product idea to a working site: a storefront that sells domains, hosting and email, and a launch page for a brand-new service.</p>
+        <ul class="c-points">
+          <li>Defined who each page is for and what it has to sell</li>
+          <li>Created the brand: night-sky palette, editorial serif, mono labels</li>
+          <li>Designed and built both pages, responsive from desktop to phone</li>
+          <li>Live on the web and linked to real checkout and sign-in</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-ch c-ch--flip" id="storefront" data-title="The storefront" data-blob-at="5" data-blob-side="right" data-sc-act="flow">
+    <figure class="c-media"><div class="shot" data-sc-parallax="-0.8"><img src="img/jishiwa-hero.jpg" width="1800" height="1125" alt="Jishiwa home page with domain search and the new .COM price" loading="lazy"></div></figure>
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 2</p>
+      <h2>Reliability you can see</h2>
+      <p class="lead">Hosting is invisible, so I gave it a picture: a globe of glowing cities, linked by the paths your site travels.</p>
+      <p>The first screen does one job. A domain search sits front and centre, with the price up front, so a new customer can start the moment they land.</p>
+      <ul class="c-points">
+        <li>Domain search as the primary action</li>
+        <li>Price shown before anyone has to ask</li>
+        <li>A quiet side index for Domains, Products, Everything, Deploy and Help</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="c-ch" id="everything" data-title="Every tool, one account" data-blob-at="0" data-blob-side="left" data-sc-act="flow">
+    <figure class="c-media"><div class="shot" data-sc-parallax="-0.8"><img src="img/jishiwa-everything.jpg" width="800" height="500" alt="Every tool, one account: products grouped into Domains, Websites, Hosting, Security, Marketing and Email" loading="lazy"></div></figure>
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 3</p>
+      <h2>Every tool, one account</h2>
+      <p class="lead">A hosting catalogue can feel like a warehouse. I sorted 16 products into six groups people already think in.</p>
+      <ul class="c-points">
+        <li>Domains, Websites, Hosting, Security, Marketing, Email</li>
+        <li>Three hero products up top: domains, cPanel hosting, professional email</li>
+        <li>Everything else one glance away, under a single login</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="c-ch c-ch--flip" id="deploy" data-title="Jishiwa Deploy" data-blob-at="1" data-blob-side="right" data-sc-act="flow">
+    <figure class="c-media"><div class="shot" data-sc-parallax="-0.8"><img src="img/jishiwa-deploy.jpg" width="1800" height="1125" alt="Jishiwa Deploy page: We deploy your idea to the world, with an altitude readout of 408 km" loading="lazy"></div></figure>
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 4</p>
+      <h2>A new service, told as a journey</h2>
+      <p class="lead">Jishiwa Deploy is for people who built something with AI and need help getting it online. Its page is one continuous scroll, from orbit down to your desk and back out to the world.</p>
+      <p>An altitude readout drops from 408 km as you scroll, and a chapter index tracks where you are: Deploy, Zoom, The work, Go live, Your clients, Stay connected, Packages, Ready.</p>
+    </div>
+  </section>
+
+  <section class="c-ch" id="handoff" data-title="Hand us the hard part" data-blob-at="2" data-blob-side="left" data-sc-act="flow">
+    <figure class="c-media"><div class="shot" data-sc-parallax="-0.8"><img src="img/jishiwa-handoff.jpg" width="800" height="500" alt="A deploy console with a checklist: code received, database connected, secret keys stored, domain pointed, HTTPS on, nightly backups, someone on call" loading="lazy"></div></figure>
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 5</p>
+      <h2>Hand us the hard part</h2>
+      <p class="lead">Deployment is full of jargon, so the page shows it instead: a console that checks off each step in plain words.</p>
+      <ul class="c-points">
+        <li>Code received from any AI builder: Lovable, Bolt, Cursor, Replit</li>
+        <li>Database connected, secret keys stored, never in code</li>
+        <li>Domain pointed, HTTPS on, nightly backups, a real person on call</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="c-ch c-ch--flip" id="live" data-title="It's live" data-blob-at="3" data-blob-side="right" data-sc-act="flow">
+    <figure class="c-media c-media--pair">
+      <div class="shot" data-sc-parallax="-0.6"><img src="img/jishiwa-live.jpg" width="800" height="500" alt="It's live: light beams spread across the globe" loading="lazy"></div>
+      <div class="shot" data-sc-parallax="-1.4"><img src="img/jishiwa-after.jpg" width="800" height="500" alt="We stay after launch: three cards for watch, care and grow" loading="lazy"></div>
+    </figure>
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 6</p>
+      <h2>The payoff, then the promise</h2>
+      <p class="lead">The scroll lands on one big moment, "It's live", as the globe lights up. Right after, the page answers the real worry: what happens next?</p>
+      <ul class="c-points">
+        <li><b>We keep watch:</b> monitoring day and night</li>
+        <li><b>We keep it current:</b> updates and backups, handled quietly</li>
+        <li><b>We grow with you:</b> logins, payments and new features, when you're ready</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="c-ch" id="packages" data-title="Packages" data-blob-at="4" data-blob-side="left" data-sc-act="flow">
+    <figure class="c-media"><div class="shot" data-sc-parallax="-0.8"><img src="img/jishiwa-packages.jpg" width="800" height="500" alt="Three packages: Static Website Deployment, Dynamic Web Application and Mobile App" loading="lazy"></div></figure>
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 7</p>
+      <h2>Three clear paths</h2>
+      <p class="lead">Instead of a pricing table, people pick the path that matches what they built, then get a quote after a free call.</p>
+      <ol class="c-steps">
+        <li><span><b>Static.</b> Portfolios, landing pages and sites exported from an AI builder.</span></li>
+        <li><span><b>Dynamic.</b> Apps with logins, databases or payments.</span></li>
+        <li><span><b>Mobile.</b> iPhone and Android apps headed for the App Store and Google Play.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="c-ch c-ch--flip" id="phone" data-title="On the phone" data-blob-at="5" data-blob-side="right" data-sc-act="flow">
+    <figure class="c-media"><div class="shot" data-sc-parallax="-0.8"><img src="img/jishiwa-phone.jpg" width="750" height="1624" alt="Jishiwa home page on a phone, with the globe above the headline and a full-width search button" loading="lazy"></div></figure>
+    <div class="c-copy" data-sc-in data-sc-stagger="60">
+      <p class="c-num">Section 8</p>
+      <h2>Composed again for the phone</h2>
+      <p class="lead">On a phone the globe rises above the headline instead of sitting beside it, and the search button stretches full width for the thumb.</p>
+      <p>The side index tucks away, so the first screen is still just one clear action: find your domain.</p>
+    </div>
+  </section>
+
+  <footer class="c-close" data-blob-at="0" data-blob-side="corner">
+    <div class="c-next">
+      <a class="c-next__link" href="case-faithwellness.html"><span>Next case study</span><b>FaithWellness</b></a>
+      <div class="c-close__ask">
+        <a class="btn" href="index.html#contact">Email Emi</a>
+        <p>Want to talk about this work or a role on your team?</p>
+      </div>
+    </div>
+    <div class="c-foot"><span>Emi Kobayashi · Product designer</span><a href="index.html#work">All work</a></div>
+  </footer>
+
+</main>
+
+<script src="scrollcraft.js"></script>
+<script src="blob.js?v=17"></script>
+<script src="cursor.js?v=4"></script>
+<script src="case.js?v=4"></script>
+</body>
+</html>
