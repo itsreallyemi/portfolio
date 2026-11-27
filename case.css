@@ -66,6 +66,22 @@
 .c-media--pair > .shot:nth-of-type(2) { position: absolute; width: 58%; right: -4%; bottom: 0; box-shadow: var(--sc-e3); }
 .c-media--pair > .shot:nth-of-type(1) { width: 88%; }
 .c-media--pair figcaption { margin-top: var(--sc-4); }
+
+/* Glass frames (pages with <body class="glass-shots">): a soft, frosted grey frame around every screenshot. */
+body.glass-shots .shot {
+  padding: 0.6rem;
+  border-radius: calc(var(--ek-radius) + 0.6rem);
+  background: rgb(236 239 243 / 0.5);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  backdrop-filter: blur(16px) saturate(140%);
+  box-shadow: var(--sc-e3), inset 0 0 0 1px rgb(255 255 255 / 0.7), 0 0 0 1px rgb(110 120 135 / 0.16);
+}
+body.glass-shots .shot img { display: block; border-radius: var(--ek-radius); }
+
+/* Phone screenshots: the frame hugs the screen (no white margin), with phone-like corners. */
+body .c-media .shot.shot--phone { width: fit-content; padding: 0.5rem; border-radius: 2.5rem; }
+body .c-media .shot.shot--phone img { border-radius: 2rem; }
+.c-media--pair > .shot.shot--phone:nth-of-type(2) { width: auto; }
 .c-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--sc-5); margin-top: var(--sc-7); align-items: start; }
 .c-gallery .shot img { height: auto; }
 .c-gallery .shot:nth-child(3n + 2) { margin-top: var(--sc-8); }

@@ -142,7 +142,8 @@
     .hero .proj__copy { gap: var(--sc-4); }
     .proj--flip .proj__media { order: 0; }
     .proj__title { font-size: var(--sc-t-3xl); }
-    .scene { height: 34svh; }
+    /* The pictures are sized by width, so the scene is too: a fixed height let them spill onto the text. */
+    .scene { height: auto; aspect-ratio: 5 / 3; }
     .scene__components { bottom: 4%; }
     .scene__phone { bottom: 0; }
     .hero .proj__title { font-size: var(--sc-t-3xl); }
@@ -154,7 +155,7 @@
     .role time { text-align: left; order: -1; }
     .form { grid-template-columns: 1fr; padding: var(--sc-5); }
   }
-  @media (max-width: 860px) and (max-height: 720px) { .scene { height: 27svh; } .hero { gap: var(--sc-3); } .hero .proj__points { display: none; } .hero__by { font-size: var(--sc-t-base); } }
+  @media (max-width: 860px) and (max-height: 720px) { .hero { gap: var(--sc-3); } .hero .proj__points { display: none; } .hero__by { font-size: var(--sc-t-base); } }
 
   /* --------------------------------------------------- reduced motion -- */
   /* ---------------------------------------- scrolling with the mouse -- */
@@ -221,6 +222,7 @@
       </ul>
       <div class="proj__go">
         <a class="btn" href="case-kingcounty.html">See case study</a>
+        <a class="link" href="https://kingcounty.gov/" target="_blank" rel="noopener">Visit the live site ↗</a>
       </div>
     </div>
   </section>
@@ -237,7 +239,7 @@
         <li><b>~$900K</b> a year in support savings</li>
         <li><b>250+</b> screens moved to the Ink design system</li>
       </ul>
-      <div class="proj__go"><a class="btn" href="case-docusign.html">See case study</a></div>
+      <div class="proj__go"><a class="btn" href="case-docusign.html">See case study</a><a class="link" href="https://www.docusign.com/trial/free" target="_blank" rel="noopener">Visit the live site ↗</a></div>
     </div>
   </section>
 
@@ -252,7 +254,7 @@
         <li><b>7.24%</b> App Store conversion rate</li>
         <li>Steered the product toward hosted <b>group trips</b></li>
       </ul>
-      <div class="proj__go"><a class="btn" href="case-tripmix.html">See case study</a></div>
+      <div class="proj__go"><a class="btn" href="case-tripmix.html">See case study</a><a class="link" href="https://www.gettripmix.app/" target="_blank" rel="noopener">Visit the live site ↗</a></div>
     </div>
   </section>
 
@@ -312,7 +314,7 @@
         <li>A progress ring so no piece is left behind</li>
         <li>A table for four, like a real puzzle night</li>
       </ul>
-      <div class="proj__go"><a class="btn" href="case-puzzling.html">See case study</a></div>
+      <div class="proj__go"><a class="btn" href="case-puzzling.html">See case study</a><a class="link" href="https://www.realities.io/puzzlingplaces" target="_blank" rel="noopener">Visit the live site ↗</a></div>
     </div>
   </section>
 
