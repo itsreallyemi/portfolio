@@ -63,17 +63,19 @@
   .hero { min-height: 100svh; }
   .hero__by { margin: 0; font: 600 var(--sc-t-lg)/1.45 var(--sc-font-text); color: var(--sc-ink-soft); max-width: 34ch; }
   .hero__by strong { color: var(--sc-ink); font-weight: 800; }
-  .scene { position: relative; height: min(74svh, 44rem); }
+  /* A fixed 4:3 stage, so the three pictures always keep the same arrangement (a height tied to the screen let
+     them drift apart). On wide screens it's capped by the screen height instead of filling the column. */
+  .scene { position: relative; aspect-ratio: 4 / 3; width: min(100%, calc(min(74svh, 44rem) * 4 / 3)); margin-inline: auto; }
   .scene > * { position: absolute; will-change: transform; }
   /* Three images on one grid: the desktop homepage at the back, the
      components page overlapping its lower left, and the phone as a portrait
      card on the right. Shared radius and shadow; bottoms step down evenly. */
   .scene > .shot { border-radius: var(--ek-radius); }
-  .scene__desktop { top: 2%; right: 0; width: 84%; aspect-ratio: 16 / 10; }
+  .scene__desktop { top: 0; right: 0; width: 84%; aspect-ratio: 16 / 10; }
   .scene__desktop img { object-position: 50% 87%; }
-  .scene__components { left: 0; bottom: 12%; width: 56%; aspect-ratio: 16 / 10; }
+  .scene__components { left: 0; bottom: 7%; width: 56%; aspect-ratio: 16 / 10; }
   .scene__components img { object-position: 0 0; }
-  .scene__phone { right: 6%; bottom: 4%; width: 27%; aspect-ratio: 3 / 4; }
+  .scene__phone { right: 5%; bottom: 0; width: 27%; aspect-ratio: 3 / 4; }
   .scene__phone img { object-position: 52% 50%; }
 
   /* ------------------------------------------------------------ about -- */
@@ -142,10 +144,6 @@
     .hero .proj__copy { gap: var(--sc-4); }
     .proj--flip .proj__media { order: 0; }
     .proj__title { font-size: var(--sc-t-3xl); }
-    /* The pictures are sized by width, so the scene is too: a fixed height let them spill onto the text. */
-    .scene { height: auto; aspect-ratio: 5 / 3; }
-    .scene__components { bottom: 4%; }
-    .scene__phone { bottom: 0; }
     .hero .proj__title { font-size: var(--sc-t-3xl); }
     .about__grid, .plate { grid-template-columns: 1fr; gap: var(--sc-7); }
     .about__edu { grid-template-columns: 1fr; }
